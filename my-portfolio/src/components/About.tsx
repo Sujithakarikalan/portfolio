@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { FaCode, FaServer, FaMobileAlt, FaLaptopCode, FaDatabase } from 'react-icons/fa'
 import { Skill } from '../types';
 
+import.meta.env.BASE_URL
 
 
 const skills: Skill[] = [
@@ -58,12 +59,17 @@ const About = () => {
           >
             
              <div className="w-full max-w-sm mx-auto h-[500px] rounded-lg overflow-hidden">
-  <img
-    src="/src/images/your-photo.jpeg"
+  {/* <img
+    src="/portfolio/images/your-photo.jpeg"
     alt="Sujitha"
     className="w-full h-full object-cover"
     style={{ objectPosition: "center top" }}
-  />
+  /> */}
+  <img
+  src={`${import.meta.env.BASE_URL}images/your-photo.jpeg`}
+  alt="Sujitha"
+  className="w-full h-full object-cover"
+/>
 </div>
             
           </motion.div>

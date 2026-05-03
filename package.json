@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "build": "npm run build --prefix my-portfolio",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d my-portfolio/dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
